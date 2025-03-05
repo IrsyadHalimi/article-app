@@ -1,3 +1,76 @@
+## Article App
+
+## Deskripsi Proyek
+
+Fitur yang tersedia meliputi:
+
+-   Menampilkan data artikel
+-   Pencarian jumlah kata yang sama dalam artikel
+-   Ganti kata artikel
+-   Mengurutkan setiap kata dalam artikel A-Z
+
+## Teknologi yang Digunakan
+
+-   Framework: Laravel 9
+-   Database: MySQL
+-   Bahasa Pemrograman: PHP
+-   Frontend: Bootstrap 5 CDN
+
+## Instalasi & Konfigurasi
+
+Pastikan sudah terpasang beberapa komponen utama ini pada perangkat komputer anda untuk dapat menjalankan program aplikasi
+
+-   Git
+-   Composer: Minimal Composer 2.0
+-   PHP: Minimal PHP 8.0
+-   MySQL / MariaDB:
+    MySQL minimal MySQL 5.7 ke atas.
+    MariaDB minimal MariaDB 10.3 ke atas.
+
+### 1. Clone Repository
+
+```sh
+git clone https://github.com/IrsyadHalimi/article-app.git
+cd article-app
+```
+
+### 2. Lakukan update dependencies
+
+Dengan beberapa command ini:
+
+```
+composer update
+```
+
+### 3. Konfigurasi dan Database
+
+Buat database baru menggunakan MySQL, sesuaikan nama database dengan file (.env) dan lakukan migrasi, dengan perintah berikut
+
+```
+php artisan migrate
+```
+
+Untuk mengisi data artikel, jalankan perintah berikut
+
+```
+php artisan db:seed --class=ArticleSeeder
+```
+
+### 4. Jalankan Aplikasi
+
+```
+php artisan serve
+```
+
+Buka url di browser: `http://localhost:8000/`
+
+## Tampilan
+
+![Deskripsi Gambar](<screen-captures/Screenshot-(3827).png>)
+![Deskripsi Gambar](<screen-captures/Screenshot-(3828).png>)
+![Deskripsi Gambar](<screen-captures/Screenshot-(3829).png>)
+![Deskripsi Gambar](<screen-captures/Screenshot-(3830).png>)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -11,13 +84,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -35,19 +108,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[OP.GG](https://op.gg)**
+-   **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+-   **[Lendio](https://lendio.com)**
 
 ## Contributing
 
