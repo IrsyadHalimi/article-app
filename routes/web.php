@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ArticleController::class, 'index'])->name('article.index');
+Route::post('/search', [ArticleController::class, 'search'])->name('article.search');
+Route::post('/replace', [ArticleController::class, 'replace'])->name('article.replace');
+Route::get('/sort', [ArticleController::class, 'sortWords'])->name('article.sort');
